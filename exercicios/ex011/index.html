@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem  dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+       <source media="(max-width:750px)" srcset="imagens/300x300.jpg" type="image/png">   
+        <source media="(max-width: 1050px)" srcset="imagens700x700.jpg" type="image/1000x1000png">
+        <img src="imagens/1000x1000.jpg" alt="Imagem flexível">
+    </picture>
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/when-all-of-this-is-over.mp3.crdownload" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue reproduzir<a href="midia/when-all-of-this-is-over.mp3.crdownload"> áudio</a>. Clique aqui para baixar o arquivo MP3</p>
+    </audio>
+</body>
+</html>

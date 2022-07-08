@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'games';
+    src: url(fontes/video\ games.ttf) format('truetype');
+}
+
+*{
+    font-family: games;
+}
