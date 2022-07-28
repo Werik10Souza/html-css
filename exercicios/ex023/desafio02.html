@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabela02</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: absolute;
+        }
+
+        tr,td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <table>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="2">B</td>
+            <td rowspan="2">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+           <td>I</td>
+           <td>G</td>
+           <td>H</td> 
+           <td>J</td>
+           <td>L</td>
+           <td>M</td>
+        </tr>
+        <tr>
+            <td colspan="9">N</td>
+        </tr>
+    </table>
 </body>
 </html>
