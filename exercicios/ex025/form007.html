@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="iestado">Estado</label>
+            <select name="estado" id="iestado">
+                
+            <option value="#" selected>--Escolha--</option>
+
+            <optgroup label="Região Norte">
+             <option value="AC">Acre</option>
+             <option value="AP">Amapá</option>
+             <option value="AM">Amazonas</option>
+             <option value="PA">Pará</option>
+             <option value="RO">Rondônia</option>
+             <option value="RR">Roraima</option>
+             <option value="TO">Tocantins</option>
+            </optgroup>
+
+            <optgroup label="Nordeste">
+                <option value="AL">Alagoas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="MA">Maranhão</option>
+                <option value="PB">Paraiba</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piaui</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </optgroup>
+
+            <optgroup label="Centro-Oeste">
+                <option value="DF">Distrito Federal</option>
+                <option value="GO">Mato Grosso</option>
+                <option value="MT">Mato Grosso do Sul</option>
+            </optgroup>
+
+            <optgroup label="Sudeste">
+                <option value="ES">Espírito Santo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+
+            <optgroup label="Sul">
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+            </optgroup>
+        </select>
+    </p>
+
+    <p>
+        <label for="iprofissão">Profissão</label>
+        <input type="text" name="profissão" id="iprofissão" list="listaprofissão">
+        <datalist id="listaprofissão">
+            <option value="ADM">Administrador</option>
+            <option value="CONT">Contabilista</option>
+            <option value="DEV">Desenvolvedor</option>
+            <option value="PROFE">Professor</option>
+        </datalist>
+    </p>
+
+    <p>
+        <label for="imensagem">Mensagem</label><br>
+        <textarea name="mensagem" id="imensagem" cols="30" rows="10"></textarea>
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </form>
+</body>
+</html>
